@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "1665b054-15c0-4fee-916d-61e2b0bc7646",
+		"name": "CitibanamexIBMChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreditCardType",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"yourPassion\":\"sports\",\r\n    \"monthlySalary\": 56546,\r\n    \"age\": 37\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Citibanamex/CreditCardType",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Citibanamex",
+						"CreditCardType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BranchOfficeATM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitud\": 19.283532,\r\n    \"longitud\":-98.435843\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SucursalATM/BranchOfficeATM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SucursalATM",
+						"BranchOfficeATM"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
