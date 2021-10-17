@@ -47,15 +47,20 @@ Para este ejecicio en particular, decidí tomar las coordenadas geográficas, ya
 Por esta razón, se consume el endpoint http://localhost:8080/SucursalATM/BranchOfficeATM, en su método POST, con la logintud y latitud con formato JSON en el body de la petición.
 
 La información necesaria para que este microsevicio pudiera funcionar correctamente fue tomada de un Json resultante al consumir el siguiente endpoint: 
-https://www.banamex.com/localizador/jsonP/json5.json.
+https://www.banamex.com/localizador/jsonP/json5.json. Este paso, donde se consume el endpoint se confuguró de manera que se guarde en cache y se borre automáticamente cada semana.
 
 Este Json al no ser tan sencillo de manipular, tuve que recurir a limparlo, una vez este proceso esta hecho, se puede buscar cualquier sucursal o ATM con solo ingresar 
 la longitud y latitud como se muestra en la siguiente imagén:
 
 ![image](https://user-images.githubusercontent.com/55073002/137561183-744d4fa8-1461-4431-af5b-891daa5fe16a.png)
 
-Cabe resaltar que las coordenadas son exactas a una sucursal, fueron tomadas del json a consumir. 
-en un principio se tomó la posibilidad de encontrar todas la sucursales o ATM a 5km a la redonda, pero por razones de tiempo esto no pudo completarse. 
+El Output de este microservicio se basa en devolver lo siguiente:
+ * street: calle en la que se encuentra.
+ * referenceStreet: entre que calles se encuentra
+ * brachOfficeATM: tipo de establecimiento (sucursal, ATM u otro)
+ * cologne: colonia en la que se encuentra
+
+Cabe resaltar que las coordenadas son exactas, fueron tomadas del json a consumir para realiar las pruebas necesarias. Ya que en un principio se tomó la posibilidad de encontrar todas la sucursales o ATM a 5km a la redonda, pero por razones de tiempo esto no pudo completarse. 
 
 ![image](https://user-images.githubusercontent.com/55073002/137561410-1d0d047b-2f2c-49f5-b761-dd7f3dafa87a.png)
 
