@@ -33,9 +33,13 @@ se obtiene una lista de las targetas de credito que se le pueden ofrecer a un cl
 
 ![image](https://user-images.githubusercontent.com/55073002/137558779-e2e2b0cd-8cd5-4e79-9909-046386c1dd46.png)
 
-Cabe resaltar que si estos inputs no cumplen con los requisitos ya establecidos el microservicio regresará una lista vacia como se muestra a continuación:
+Cabe resaltar que si estos inputs no cumplen con los requisitos ya establecidos el microservicio regresará un mensaje donde indica que no hay coincidencias como se muestra a continuación:
 
-![image](https://user-images.githubusercontent.com/55073002/137559275-847850dc-d677-478f-b1eb-3aad003bcdd1.png)
+![noMatches targetas](https://user-images.githubusercontent.com/55073002/137649340-dc5db2b4-5120-437c-86c0-353be6341568.png)
+
+Existe la posibilidad de que falte un input requerido por el microservicio, por lo que en en este caso devolvera un mensaje donde se indica que algo ha salido mal. 
+
+![something is wrong](https://user-images.githubusercontent.com/55073002/137649379-c2337014-7a62-4212-99c7-f397bf2dddb8.png)
 
 
 ## Ejercicio 2
@@ -64,9 +68,9 @@ Cabe resaltar que las coordenadas son exactas, fueron tomadas del json a consumi
 
 ![image](https://user-images.githubusercontent.com/55073002/137561410-1d0d047b-2f2c-49f5-b761-dd7f3dafa87a.png)
 
-finalmente en caso de no encontrar coincidencia alguna, el microservicio regresara una lista vacia.
+finalmente en caso de no encontrar coincidencia alguna, el microservicio regresará un mensaje donde indica que no ha encontrado ninguna coincidencia.
 
-![image](https://user-images.githubusercontent.com/55073002/137561479-7efb213f-cdea-443a-830e-e5f6c94cd0c0.png)
+![image](https://user-images.githubusercontent.com/55073002/137649486-20c45fb6-1d32-4621-a678-754eb69a5f60.png)
 
 
 Nota: Adjunto un archivo sql y una coleccion de postman para las pruebas necesarias.
