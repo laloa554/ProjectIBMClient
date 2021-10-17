@@ -65,9 +65,13 @@ finalmente en caso de no encontrar coincidencia alguna, el microservicio regresa
 
 
 Nota: Adjunto un archivo sql y una coleccion de postman para las pruebas necesarias.
-primero se debera de correr el proyecto **ProjectIBMServer** y despues **ProjectIBMClient**
+primero se debera de correr el proyecto **ProjectIBMServer**, al igual que  **ProjectIBMEureka** y finalmente **ProjectIBMClient**
 tambien hay un archivo donde se traen las configuraciones con Spring cloud.
 
  **ProjectIBMServer**: https://github.com/laloa554/ProjectIBMServer.git
+ 
  **ProjectIBMClient**: https://github.com/laloa554/ProjectIBMClient.git
+ 
+ **ProjectIBMEureka**: https://github.com/laloa554/ProjectIBMEureka.git
+ 
  **PropertiesIBM**: https://github.com/laloa554/PropertiesIBM.git
